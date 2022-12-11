@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    background-color: rgb(166, 179, 108);
+}
+.container{
+    padding: 50px 0px;
+}
+.row{
+    margin: auto;
+    padding: 50px 30px;
+    background-color: rgb(245, 246, 247);
+}
+.row form label{
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #a6b36c;
+}
+.row form input{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 13px;
+    margin: 20px auto;
+}
+.fahrenheit, .celsius, .kelvin{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0px;
+    color: rgb(47, 0, 158);
+    text-transform: capitalize;
+}
+.fahrenheit #resultFahrenhit, .celsius #resultCelsius, .kelvin #resutKelvin, .kelvin #fahToKelvin, .celsius #kelToCel, .fahrenheit #kelToFah{
+    color: rgb(151, 0, 0);
+}

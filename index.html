@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form action="">
+          <label for="">Temperature conversion</label>
+          <!-- celsius to fahrenheit  -->
+          <input
+            type="number"
+            name="temp-celsius"
+            id="temp-celsius"
+            placeholder="°celsius"
+            onchange="celsiusTemprature(this.value)"
+          />
+          <p class="fahrenheit">
+            fahrenheit : <span id="resultFahrenhit"></span>
+          </p>
+          <!-- celsius to kelvin  -->
+          <input
+            type="number"
+            name="temp-cel"
+            id="temp-cel"
+            placeholder="°celsius"
+            onchange="celTemperature(this.value)"
+          />
+          <p class="kelvin">kelvin : <span id="resutKelvin"></span></p>
+          <!-- fahrenheit to celsius  -->
+          <input
+            type="number"
+            name="temp-fahrenheit"
+            id="temp-fahrenheit"
+            placeholder="°fahrenheit"
+            onchange="fahrenheitTemperature(this.value)"
+          />
+          <p class="celsius">celsius : <span id="resultCelsius"></span></p>
+          <!-- fahrenheit to kelvin  -->
+          <input
+            type="number"
+            name="temp-fah"
+            id=""
+            placeholder="°fahrenheit"
+            onchange="fahTemperature(this.value)"
+          />
+          <p class="kelvin">kelvin : <span id="fahToKelvin"></span></p>
+          <!-- kelvin to celsius  -->
+          <input
+            type="number"
+            name=""
+            id=""
+            placeholder="kelvin"
+            onchange="kelvinTemperature(this.value)"
+          />
+          <p class="celsius">celsius : <span id="kelToCel"></span></p>
+          <!-- kelvin to fahrenheit -->
+          <input
+            type="number"
+            name=""
+            id=""
+            placeholder="kelvin"
+            onchange="kelTemperature(this.value)"
+          />
+          <p class="fahrenheit">fahrenheit : <span id="kelToFah"></span></p>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- https://www.mongodb.com/compatibility/mongodb-laravel-intergration -->
